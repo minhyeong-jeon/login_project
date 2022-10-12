@@ -1,10 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <body>
 	<div class="container">
 		 <div>
-			로그인성공
+			 <h1>Hello</h1>
+			 <p>회원 기능</p>
+			 <p>
+				 <a href="/user/login">로그인</a>
+			 </p>
 		 </div>
 	</div> 
 </body>

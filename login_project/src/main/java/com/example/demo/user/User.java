@@ -1,4 +1,4 @@
-package com.example.demo.member;
+package com.example.demo.user;
 
 public class User {
 	

@@ -1,9 +1,5 @@
 package com.example.demo.user;
 
-import java.util.Map;
-
-import javax.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,10 +14,4 @@ public class UserServiceImpl implements UserService {
 		User user = userDao.doUserLogin(strLUserId);
 		return user;
 	}
-	
-	/*
-	 * @Override public User login(Map<String, String> map) throws Exception {
-	 * return userMapper.login(map); }
-	 */
-
 }

@@ -3,6 +3,8 @@
 <configuration>
   <mappers>
   	<mapper resource="UserMapper.xml"/>
+  	<mapper resource="JoinMapper.xml"/>
   </mappers>
+
         
 </configuration>

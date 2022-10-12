@@ -6,6 +6,5 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-ma
 	<select id="doUserLogin" resultType="com.example.demo.user.User">
 	  select * from user where userId=#{strLoginId}
 	 </select>
-	
 	 
 </mapper>

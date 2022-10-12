@@ -27,9 +27,7 @@ public class UserController {
 	}
 	
 	@PostMapping("/login_exe")
-	public String doLogin(@RequestParam(value="userName", defaultValue="--") String strUserName,
-						@RequestParam(value="userDate", defaultValue="--") String strUserDate,
-						@RequestParam(value="userId", defaultValue="--") String strUserId,
+	public String doLogin(@RequestParam(value="userId", defaultValue="--") String strUserId,
 						@RequestParam(value="userPass", defaultValue="--") String strUserPW,
 						Model model) throws Exception {
 		User user = userService.doUserLogin(strUserId);
@@ -52,17 +50,6 @@ public class UserController {
 				strReturn = "/login/loginForm";
 				strMeg = "패스워드가 일치하지 않습니다.";
 			}
-			
-			else if(!strUserName.equals(user.getUserName())) {
-				strReturn = "/login/loginForm";
-				strMeg = "이름이 일치하지 않습니다.";
-			}
-			
-			else if(!strUserDate.equals(user.getUserDate())) {
-				strReturn = "/login/loginForm";
-				strMeg = "생년월일이 일치하지 않습니다.";
-			}
-			
 			else {
 				strReturn = "redirect:/";
 				strMeg = "로그인 성공.";

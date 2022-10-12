@@ -9,9 +9,19 @@
 <html>
 <body>
 	<div class="container">
-		 <form action="/login/login_exe" method="post">
+		 <form action="/join/join_exe" method="post">
 		 	<div><label><%=strMeg%></label></div>
 		 	
+		 	 <div class="form-group">
+				 <label for="userName">이름</label>
+				 <input type="text" id="userName" name="userName" required>
+			 </div>
+		 
+			 <div class="form-group">
+				 <label for="userDate">생년월일</label>
+				 <input type="text" id="userDate" name="userDate" required>
+			 </div>
+			 
 			 <div class="form-group">
 				 <label for="userId">아이디</label>
 				 <input type="text" id="userId" name="userId" required>
@@ -22,7 +32,7 @@
 				 <input type="password" id="userPass" name="userPass" required>
 			 </div>	 
 			 
-			 <button type="submit">로그인</button>
+			 <button type="submit">회원가입</button>
 		 </form>
 	</div>
 </body>

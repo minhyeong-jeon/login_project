@@ -1,0 +1,48 @@
+package com.example.demo.user;
+
+public class User {
+	
+	private String userName;
+	private Integer userDate;
+	private String userId;
+	private String userPass;
+	
+	public User(String userName, Integer userDate, String userId, String userPass) {
+        this.userName = userName;
+        this.userDate = userDate;
+        this.userId = userId;
+        this.userPass = userPass;
+    }
+	
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public Integer getUserDate() {
+		return userDate;
+	}
+	public void setUserDate(Integer userDate) {
+		this.userDate = userDate;
+	}
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public String getUserPass() {
+		return userPass;
+	}
+	public void setUserPass(String userPass) {
+		this.userPass = userPass;
+	}
+
+	
+	@Override
+	public String toString() {
+		return "MemberDTO [username=" + userName + ", userDate=" + userDate 
+				+ ", userId=" + userId + ", userPass=" + userPass + "]";
+	}
+}

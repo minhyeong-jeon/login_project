@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>home</title>
+</head>
+<body>
+	<p th:text="${hello}">message</p>
+	<a th:href="@{/login/login}">로그인</a>
+	<a th:href="@{/join/join}">회원가입</a>
+
+	<th:block th:if="${userInfo != null}">
+		<p th:text="${userInfo.userId}">userId</p>
+		<p th:text="${userInfo.userDate}">userDate</p>
+		<p th:text="${userInfo.userName}">userName</p>
+	<th:block>
+</body>
+</html>
